@@ -6,9 +6,9 @@ import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 
-//import javax.persistence.Id; //물리적인 pk생성
-
 import lombok.Data;
+
+//import javax.persistence.Id; //물리적인 pk생성
 
 @Entity
 @Data

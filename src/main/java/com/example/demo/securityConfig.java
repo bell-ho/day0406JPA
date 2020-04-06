@@ -21,8 +21,7 @@ public class securityConfig extends WebSecurityConfigurerAdapter {
 //		http.formLogin().loginPage("/login").defaultSuccessUrl("/list").permitAll();
 		http.formLogin().defaultSuccessUrl("/list").permitAll();
 		http.logout().logoutRequestMatcher(new AntPathRequestMatcher("/logout")).invalidateHttpSession(true);
+		http.csrf().disable();
 		http.httpBasic();
-		
 	}
-	
 }
